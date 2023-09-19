@@ -15,9 +15,8 @@ const Faq = () => {
                   <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${
-                        open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-indigo-500`}
+                      className={`${open ? "transform rotate-180" : ""
+                        } w-5 h-5 text-indigo-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
@@ -35,22 +34,22 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "¿Para que sirve Inmodocs?",
+    answer: "Nuestro objetivo es facilitar el acceso a contratos profesionales en el sector inmobiliario",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "¿Puedo usar estas plantillas demanera profesional?",
+    answer: "Si, claro que puedes. si deseas mas informaciones comunicate con nosotros",
   },
   {
-    question: "What is your refund policy? ",
+    question: "¿Qué es una ‘legaltech’? ",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "El lenguaje evoluciona tan rápido como lo hace la sociedad. Es por eso que, a medida que emerge una nueva realidad, objeto o fenómeno, necesitamos palabras que puedan definirlos correctamente.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "¿Quiénes están detrás de Inmodocs?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Nuestros contratos han sido redactados por abogados de Cánovas Estudio Legal, una firma con más de 30 años de experiencia en Derecho Inmobiliario, para garantizar la validez de tus documentos",
   },
 ];
 

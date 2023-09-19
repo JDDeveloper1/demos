@@ -7,57 +7,121 @@ import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
+import Blog from "../components/blog";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import Trusted from "../components/Trusted";
+import DigitalCards from "../components/DigitalCards";
+// import TrendingSlider from "../components/TrendingSlider";
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Demo - Inmodocs - By JDDeveloper1</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="landing page template"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <Navbar />
+      </header>
 
-      <Navbar />
-      <Hero />
-      <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
-      </SectionTitle>
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>
-      <Video />
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-      <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      <Faq />
-      <Cta />
-      <Footer />
-      <PopupWidget />
+
+      <main className="m-10">
+        <div className="pt-10">
+          <Hero />
+        </div>
+
+
+        <div className="pt-20">
+          <SectionTitle
+            pretitle="Inmodocs "
+            title=" Generando confianza en nuestros clientes ">
+            más de
+            <span className="text-orange-600">1000 </span >clientes ya confian en nosotros
+            al rededor del mundo
+          </SectionTitle>
+          <Trusted />
+        </div>
+
+        <div className="pt-20">
+          <Cta />
+        </div>
+
+        <div className="pt-20">
+          <SectionTitle
+            pretitle="Nuestros Servicios -Inmodocs "
+            title="Descubre los servicios que tenemos diseñados para ti">
+            Selecciona entre los servicios que te preparamos,
+            creados para que se adapte a tus necesidades y las de tu empresa
+          </SectionTitle>
+
+          <Benefits data={benefitOne} />
+
+          <Benefits imgPos="right" data={benefitTwo} />
+        </div>
+
+
+        {/* 
+        <SectionTitle
+          pretitle="slider info"
+        >Accece a nuestra exclusiva area de clientes</SectionTitle>
+        <TrendingSlider /> */}
+
+        <div className="pt-20">
+          <SectionTitle className="m-15"
+            pretitle="Inmodocs"
+            title="¿Por qué necesitas inmodocs?">
+          </SectionTitle>
+
+          <DigitalCards />
+        </div>
+
+
+        <div className="pt-20">
+          <SectionTitle className="m-15"
+            pretitle="Mira este video - Inmodocs"
+            title="¿Requieres documentos legales para tu empresa inmobiliaria?">
+            En Inmodocs te brindamos cualquiera que necesites. Ofrecemos la realización y gestión de textos legales en este rubro que van
+            desde los contratos de compraventa, alquiler, construcción, reclamaciones y más. No dudes en contactarnos.
+          </SectionTitle>
+
+          <Video />
+        </div>
+
+        <div className="pt-20">
+          <SectionTitle className="m-15"
+            pretitle="FAQ Inmodocs"
+            title="Preguntas Frecuentes de nuestros clientes">
+            Encuentre aquí todas las posibles preguntas de nuestros clientes,
+            así como tambien las solicitudes de soporte o chat.
+          </SectionTitle>
+          <Faq />
+        </div>
+
+
+        <div className="py-20">
+          <SectionTitle className="m-15"
+            pretitle="Blog Inmodocs"
+            title="Blog">
+            Encuentra aqui todas nuestras publicaciones y actulizaciones de la comunidad
+          </SectionTitle>
+          <Blog />
+        </div>
+
+
+
+        <PopupWidget />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
+
     </>
   );
 }

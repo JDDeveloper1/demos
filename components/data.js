@@ -11,50 +11,50 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Compraventa",
+  desc: "Te brindamos un asesoramiento integral en tu Compraventa, con los mejores abogados",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Estudio de la documentación",
+      desc: "Junto a ti estudiamos la documentación del inmueble",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Revisión y análisis de nota simple",
+      desc: "Deja en nustras manos la revision y análisis de nota simple",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Redacción y revisión de documento de reserva",
+      desc: "Redactamos la documentacion de reserva y revisamos el docuemnto para birndate lo mejor ",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Alquiler ",
+  desc: "Revisamos tus contratos de alquiler de manera remota, todo nuestro servicio a un click ",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: "Obtén información clave de tu contrato",
+      desc: "descubre e informate de los puntos clave de tus contratos",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: "Detección de errores y cláusulas abusivas",
+      desc: "Junto a nuestros abogados revisamos a detalle tu contrato para encontrar errores y clausulas abusivas",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      title: "Cumplimiento y adecuación a la nueva ley de vivienda 2023",
+      desc: "Estamos informados y formados para darte un asesoria con los ultimos decretos de vivienda < en el 2023",
       icon: <SunIcon />,
     },
   ],
 };
 
 
-export {benefitOne, benefitTwo};
+export { benefitOne, benefitTwo };
